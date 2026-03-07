@@ -364,7 +364,8 @@
 
     /* ── SKILLS ── */
     .skills-section { background: var(--surface); }
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; justify-content: center; }
+    .skill-tile { flex: 0 0 160px; }
     .skill-tile {
       background: var(--surface2);
       border: 1px solid var(--border);
@@ -381,7 +382,7 @@
       box-shadow: 0 12px 32px rgba(124,58,237,0.15);
     }
     .skill-tile svg { margin-bottom: 8px; }
-    .skill-tile span { font-size: 0.85rem; color: var(--muted); font-weight: 500; }
+    .skill-tile span { font-size: 0.85rem; color: var(--muted); font-weight: 500; white-space: nowrap; }
 
     .soft-skills { display: flex; flex-wrap: wrap; gap: 10px; }
     .soft-badge {
